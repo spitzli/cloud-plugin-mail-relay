@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   check:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ${{ fromJSON(vars.WEBDOCK_PLUGIN_CI_RUNNER) }}
     timeout-minutes: 25
     steps:
