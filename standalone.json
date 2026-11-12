@@ -1,14 +1,14 @@
 {
   "binaries": [
-    "webdock-mail-relay"
+    "spitzli-mail-relay"
   ],
   "connectionsOwner": "Core",
   "coreIntegrationDependencies": [],
   "coreIntegrationTests": [],
-  "entrypoint": "webdock-mail-relay",
+  "entrypoint": "spitzli-mail-relay",
   "lockfileRequiresRegeneration": true,
   "name": "mail-relay",
-  "package": "webdock-mail-relay",
+  "package": "spitzli-mail-relay",
   "release": {
     "mode": "oci-only",
     "protocol": "webdock.mail.v1",
@@ -17,12 +17,12 @@
     "version": "0.1.0"
   },
   "sdkDependencies": [
-    "webdock-mail-message",
-    "webdock-mail-protocol",
-    "webdock-plugin-http",
-    "webdock-plugin-runtime"
+    "spitzli-mail-message",
+    "spitzli-mail-protocol",
+    "spitzli-plugin-http",
+    "spitzli-plugin-runtime"
   ],
   "sdkGit": "https://github.com/spitzli/cloud-plugin-sdk",
-  "sdkRevision": "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6",
+  "sdkRevision": "8019f3df67dba3fed3083f22635e4725028c1b5e",
   "source": "plugins/mail-relay"
 }

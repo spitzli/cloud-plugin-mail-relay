@@ -1,0 +1,50 @@
+{
+  "baseSource": "021f2583b9a74eba4bbd35c2c21eecd0155c79fb",
+  "date": "2026-11-12",
+  "formatVersion": 1,
+  "licenseUnchanged": true,
+  "originalSourceSnapshotRetained": true,
+  "package": "spitzli-mail-relay",
+  "preservedBindingFilesSHA256": {
+    "COMMERCIAL-LICENSING.md": "5b8832f5014f16e2cf4f7ee295de32760eed20981495d184bd9f1517be256a09",
+    "EXPORT-PROVENANCE.json": "6879f488d15f296e6465cf7ec7522644ca6637e86ce466cebf983845a3a4b3bd",
+    "LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  "qualifiedChangedSourceSHA256": {
+    "Cargo.lock": "a9944c035d040a1e38235607e4ea17c65a22f1db9b403a3b55fd0d0ce37aeaab",
+    "Cargo.toml": "2e8101241ce718cf6e9e9a3513366eed8a1bc75e97f3a4f5793a3a25d60836e3",
+    "Dockerfile": "7da1efaf15840f89d76013a1ae781d816c730901ade9f17d0dbee35928c6c931",
+    "NOTICE": "4949ccd63735c148d2fd1f1423772d11938087ba0bdbcf4aad81c576bcfa09b8",
+    "scripts/native-release.py": "44ed0e8cf69563be9dd1a12f33bc226188136f60188006a99d0da2cca50fbcd4",
+    "src/lib.rs": "f3c617ff41e599481d0cb6739ccc4d798e56325e087d82e22654fe38e5d35165",
+    "src/main.rs": "90339ecaa9848862401cfb0b4a7eef151dabbc666d723c9d6f63fef25a91f910",
+    "standalone.json": "79ab77bef1375b4eb52acea89b67264fd98228800ee32d47e08e680a6075990c",
+    "tests/common/mod.rs": "1f5831a8454d1a05cf09faf12766b3f4200c46f7ee044d2629b123cca13b1601",
+    "tests/process.rs": "79381f9d3550102f9f859a53c566cd714aaf3dda8bbe54bb6b82ce28b2d1fbc0",
+    "tests/provider.rs": "a5a1b74a988a1c4f6697b8e9fd48404b91a6ff5506aba2474f4fbeca96457f82",
+    "tools/manifest-validator/Cargo.toml": "81aa8724804a7f701f7b312c8851937369409d029071d2034dbd6f535b86df6a",
+    "tools/manifest-validator/src/main.rs": "bb5f5ab38c63e2c28aa64a329696e923aa747e62de2d058e2de734ada06e72b4"
+  },
+  "runtimeArtifactsReplaced": false,
+  "scope": "Rust package/import and binary namespace, host UI import namespace, paired test environment variables and exact SDK pin",
+  "sdkGit": "https://github.com/spitzli/cloud-plugin-sdk",
+  "sdkRevision": "8019f3df67dba3fed3083f22635e4725028c1b5e",
+  "sourceChecks": {
+    "allRegistryLockfilesPreserved": [
+      "Cargo.lock"
+    ],
+    "format": true,
+    "releaseContract": true,
+    "rustLiteralFilesChecked": 6,
+    "strictClippy": true,
+    "testsIgnored": 0,
+    "testsPassed": 2,
+    "ui": {
+      "backendOnly": true,
+      "component": "mail-relay",
+      "uiTypecheck": "not-applicable-no-ui-source"
+    }
+  },
+  "version": "0.1.0",
+  "wireStoredCryptographicAndExternalResourceBindings": "retained for coordinated migration"
+}
