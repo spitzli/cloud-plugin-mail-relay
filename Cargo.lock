@@ -2008,6 +2008,131 @@ dependencies = [
 ]
 
 [[package]]
+name = "spitzli-mail-message"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "base64 0.22.1",
+ "chrono",
+ "hex",
+ "idna",
+ "lettre",
+ "mail-builder",
+ "serde",
+ "serde_json",
+ "sha2",
+ "thiserror 2.0.21",
+ "unicode-normalization",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-mail-protocol"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "async-trait",
+ "base64 0.22.1",
+ "ed25519-dalek",
+ "hex",
+ "prost",
+ "semver",
+ "serde",
+ "serde_json",
+ "sha2",
+ "spitzli-plugin-runtime",
+ "thiserror 2.0.21",
+ "tokio",
+ "tokio-stream",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-mail-relay"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "ed25519-dalek",
+ "hex",
+ "libc",
+ "rcgen",
+ "rustls",
+ "serde",
+ "serde_json",
+ "spitzli-mail-message",
+ "spitzli-mail-protocol",
+ "spitzli-plugin-http",
+ "spitzli-plugin-runtime",
+ "tempfile",
+ "tokio",
+ "tokio-rustls",
+ "tokio-stream",
+ "tonic",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-plugin-http"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "futures-util",
+ "reqwest",
+ "serde",
+ "thiserror 2.0.21",
+ "url",
+]
+
+[[package]]
+name = "spitzli-plugin-protocol"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "base64 0.22.1",
+ "chrono",
+ "ed25519-dalek",
+ "jsonschema",
+ "node-semver",
+ "regex",
+ "serde",
+ "serde_json",
+ "sha2",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-plugin-runtime"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "ed25519-dalek",
+ "hex",
+ "hyper-util",
+ "prost",
+ "rustix",
+ "rustls",
+ "rustls-pemfile",
+ "serde",
+ "serde_json",
+ "sha2",
+ "spitzli-plugin-protocol",
+ "tokio",
+ "tokio-rustls",
+ "tokio-stream",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+ "tower",
+ "url",
+ "x509-parser",
+]
+
+[[package]]
 name = "spki"
 version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2635,131 +2760,6 @@ checksum = "5a6580f308b1fad9207618087a65c04e7a10bc77e02c8e84e9b00dd4b12fa0bb"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "webdock-mail-message"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "base64 0.22.1",
- "chrono",
- "hex",
- "idna",
- "lettre",
- "mail-builder",
- "serde",
- "serde_json",
- "sha2",
- "thiserror 2.0.21",
- "unicode-normalization",
- "uuid",
-]
-
-[[package]]
-name = "webdock-mail-protocol"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "async-trait",
- "base64 0.22.1",
- "ed25519-dalek",
- "hex",
- "prost",
- "semver",
- "serde",
- "serde_json",
- "sha2",
- "thiserror 2.0.21",
- "tokio",
- "tokio-stream",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
- "uuid",
- "webdock-plugin-runtime",
-]
-
-[[package]]
-name = "webdock-mail-relay"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "ed25519-dalek",
- "hex",
- "libc",
- "rcgen",
- "rustls",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tokio-rustls",
- "tokio-stream",
- "tonic",
- "url",
- "uuid",
- "webdock-mail-message",
- "webdock-mail-protocol",
- "webdock-plugin-http",
- "webdock-plugin-runtime",
-]
-
-[[package]]
-name = "webdock-plugin-http"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "futures-util",
- "reqwest",
- "serde",
- "thiserror 2.0.21",
- "url",
-]
-
-[[package]]
-name = "webdock-plugin-protocol"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "base64 0.22.1",
- "chrono",
- "ed25519-dalek",
- "jsonschema",
- "node-semver",
- "regex",
- "serde",
- "serde_json",
- "sha2",
- "url",
- "uuid",
-]
-
-[[package]]
-name = "webdock-plugin-runtime"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "ed25519-dalek",
- "hex",
- "hyper-util",
- "prost",
- "rustix",
- "rustls",
- "rustls-pemfile",
- "serde",
- "serde_json",
- "sha2",
- "tokio",
- "tokio-rustls",
- "tokio-stream",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
- "tower",
- "url",
- "webdock-plugin-protocol",
- "x509-parser",
 ]
 
 [[package]]
